@@ -1,0 +1,14 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+      {
+          "label": "Build and Run",
+          "type": "shell",
+          "command": "gcc -o dist/kolm kolm.c update.c events.c render.c -lSDL2 && ./dist/kolm",
+          "group": {
+              "kind": "build",
+              "isDefault": true
+          }
+      }
+  ]
+}
